@@ -14,7 +14,7 @@ const DefaultLayout: React.FunctionComponent<IDefaultLayoutProps> = ({children, 
                     {title}
                 </title>
             </Head>
-            <div className="flex min-h-screen flex-col justify-between overflow-hidden">
+            <div className="flex min-h-screen flex-col justify-between overflow-hidden font-display">
                 <Header/>
                 <main>
                     {children}

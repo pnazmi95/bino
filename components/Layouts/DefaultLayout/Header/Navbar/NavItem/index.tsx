@@ -19,12 +19,12 @@ const NavItem: React.FunctionComponent<INavItemProps> = ({
   const router = useRouter();
 
   return (
-    <li className="cursor-pointer text-xl font-bold uppercase text-light-heading hover:text-light-hover dark:text-dark-heading dark:hover:text-dark-hover"
+    <li className="cursor-pointer text-xl font-bold uppercase text-light-heading hover:text-light-hover dark:text-dark-heading dark:hover:text-dark-hover text-[0.875rem]"
     onClick={onClick}
     >
       <Link
         href={`${url}`}
-        className={`${router.pathname === url ? "h-full w-full rounded-b-md text-light-hover dark:text-dark-hover": undefined}`}
+        className={`text-[0.875rem] font-display font-medium ${router.pathname === url ? "h-full w-full rounded-b-md text-light-hover dark:text-dark-hover": undefined}`}
       >
         {title}
       </Link>

@@ -3,11 +3,11 @@
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 
 const HomePage = () => {
-  return (
-    <DefaultLayout title="Bino-HomePage">
-      <h1>Hello Bino</h1>
-    </DefaultLayout>
-  )
+   return (
+      <DefaultLayout title="خانه">
+         <h1 className="text-5xl font-display font-thin text-light-primary">سلام بینو</h1>
+      </DefaultLayout>
+   )
 };
 
 export default HomePage;

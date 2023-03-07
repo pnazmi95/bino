@@ -1,31 +1,37 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    colors: {
-      dark: {
-        primary: "#181818",
-        secondary: "#313131",
-        heading: "#ffffff",
-        content: "#AAAAAA",
-        error: "#9474b8",
-        hover: "#d7b932",
+   darkMode: "class",
+   content: [
+      "./app/**/*.{js,ts,jsx,tsx}",
+      "./pages/**/*.{js,ts,jsx,tsx}",
+      "./components/**/*.{js,ts,jsx,tsx}",
+   ],
+   theme: {
+      fontFamily: {
+         display: ["Estedad", "sans-serif"],
+         fontWeight: {
+            thin: 100,
+            extralight: 200,
+            light: 300,
+            'regular': 400,
+            medium: 500,
+            semibold: 600,
+            bold: 700,
+            extrabold: 800,
+            black: 900,
+         }
       },
-      light: {
-        primary: "#bdbdbd",
-        secondary: "#e0e0e0",
-        heading: "#3d3d3d",
-        content: "#555555",
-        error: "#9474b8",
-        hover: "#937820",
+      colors: {
+         light: {
+            primary: "#AA0095",
+            typeface_b: "#000000",
+            typeface_w: "#FFFFFF",
+            error: "#FF0000",
+            success: "#00B051",
+            hover: "#bf3faf",
+         },
       },
-    },
-    extend: {},
-  },
-  plugins: [],
+      extend: {},
+   },
+   plugins: [],
 }

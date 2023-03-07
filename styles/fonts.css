@@ -1,20 +1,48 @@
 @font-face {
-  font-family: "Rubik";
-  src: url("../fonts/");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Estedad-Black";
+    src: url('@/public/fonts/estedad_font/Estedad-Black.ttf');
 }
 
 @font-face {
-  font-family: "Rubik";
-  src: url("../fonts/");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Estedad-Bold";
+    src: url('@/public/fonts/estedad_font/Estedad-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Rubik";
-  src: url("/fonts/");
-  font-weight: normal;
-  font-style: italic;
+    font-family: "Estedad-ExtraBold";
+    src: url('@/public/fonts/estedad_font/Estedad-ExtraBold.ttf');
 }
+
+@font-face {
+    font-family: "Estedad-ExtraLight";
+    src: url('@/public/fonts/estedad_font/Estedad-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: "Estedad-Light";
+    src: url('@/public/fonts/estedad_font/Estedad-Light.ttf');
+}
+
+@font-face {
+    font-family: "Estedad-Medium";
+    src: url('@/public/fonts/estedad_font/Estedad-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Estedad-Regular";
+    src: url('public/fonts/estedad_font/Estedad-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Estedad-SemiBold";
+    src: url('public/fonts/estedad_font/Estedad-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Estedad-Thin";
+    src: url('public/fonts/estedad_font/Estedad-Thin.ttf');
+}
+
+
+
+
