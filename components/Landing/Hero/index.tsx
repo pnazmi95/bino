@@ -1,4 +1,5 @@
 import cartPngPrimary from "@/public/icons/page1/cartIconNormalPrimary.png"
+import leftArrowPrimary from "@/public/icons/page1/leftArrowPngIconPrimary.png"
 import Image from "next/image";
 interface IHeroProps extends React.PropsWithChildren{}
 
@@ -22,11 +23,11 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
                         سفارش محتوای بصری
                      </span>
                   </button>
-                  <button className="w-[5.875rem] h-[2.5rem] p-[0.5rem_1.5rem_0.5rem_0.75rem] rounded-[8px] bg-light-typeface_w">
+                  <button className="w-[5.875rem] h-[2.5rem] p-[0.5rem_1.5rem_0.5rem_0.75rem] rounded-[8px] bg-light-typeface_w flex justify-center items-center gap-[0.5rem]">
                      <span className="w-[1.625rem] h-[1.5rem] text-[0.875rem] font-display font-medium text-center text-light-primary align-middle pt-[0.1rem]">
                         ورود
                      </span>
-                     <span></span>
+                     <Image src={leftArrowPrimary} alt={"Icon"} className="w-[1.5rem] h-[1.5rem]" />
                   </button>
                </div>
             </div>
