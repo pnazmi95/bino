@@ -3,7 +3,7 @@ import leftArrowPrimary from "@/public/icons/page1/leftArrowPngIconPrimary.png"
 import Image from "next/image";
 interface ISecondHeroProps extends React.PropsWithChildren{}
 
-const SecondHero: React.FunctionComponent<ISecondHeroProps> = (props) => {
+const SecondHero: React.FunctionComponent<ISecondHeroProps> = (props): JSX.Element => {
    return (
       <section className="bg-light-typeface_w h-[calc(100vh)] flex justify-center items-center">
          <div className="flex max-w-[66.5rem] h-[19.031rem] justify-between items-center gap-[3.5rem]">
