@@ -10,7 +10,7 @@ interface INavbarProps extends React.PropsWithChildren {
 const Navbar: React.FunctionComponent<INavbarProps> = (): JSX.Element => {
    return (
       <nav
-         className="sticky top-0 z-50 flex h-[6rem] items-center justify-center bg-light-secondary dark:bg-dark-secondary shadow-[0_3px_15px_-0_rgba(0,0,0,0.05)]">
+         className="sticky top-0 z-50 flex h-[6rem] items-center justify-center bg-light-typeface_w shadow-[0_3px_15px_0_rgba(0,0,0,0.05)]">
          <div className="max-w-[66.5rem] flex justify-between items-center w-full">
             <Image src={logo} alt={"Logo"} height={35} className="ml-[4.5rem]"/>
             <div className="flex w-full items-center justify-between">

@@ -8,7 +8,8 @@ export default function Document() {
             <link rel="preconnect" href="//v1.fontapi.ir"/>
             <link href="https://v1.fontapi.ir/css/Estedad" rel="stylesheet"/>
          </Head>
-         <body className="scrollbar scrollbar-thumb-light-typeface_w scrollbar-track-light-primary scrollbar-thin">
+         <body className="scrollbar-hide">
+         {/*scrollbar scrollbar-thumb-light-typeface_w scrollbar-track-light-primary scrollbar-thin*/}
          <Main/>
          <NextScript/>
          </body>
