@@ -5,6 +5,7 @@ import Hero from "@/components/Landing/Hero";
 import SecondHero from "@/components/Landing/SecondHero";
 import HowPart from "@/components/Landing/HowPart";
 import WhyPart from "@/components/Landing/WhyPart";
+import FrequentQuestions from "@/components/Landing/FrequentQuestions";
 
 const HomePage = () => {
    return (
@@ -13,6 +14,7 @@ const HomePage = () => {
          <SecondHero />
          <HowPart />
          <WhyPart />
+         <FrequentQuestions />
       </DefaultLayout>
    )
 };

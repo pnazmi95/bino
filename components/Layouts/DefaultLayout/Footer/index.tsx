@@ -19,7 +19,7 @@ const Footer: React.FunctionComponent<FooterProps> = (): JSX.Element => {
 
          <div className="w-[66.5rem] h-[0.063rem] bg-[#c6c6c6]"></div>
 
-         <div className="w-[21rem] h-[5.69rem] flex justify-center items-center gap-[2.616rem]">
+         <div className="w-[21remyar] h-[5.69rem] flex justify-center items-center gap-[2.616rem]">
             <Image src={instagramIcon} alt={"instagram"} className="w-[2.5rem] h-[2.5rem]" />
             <Image src={telegramIcon} alt={"telegram"} className="w-[2.5rem] h-[2.5rem]" />
             <Image src={linkdinIcon} alt={"linkdin"} className="w-[2.5rem] h-[2.5rem]" />
