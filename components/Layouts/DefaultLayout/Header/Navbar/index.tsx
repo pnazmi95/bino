@@ -3,6 +3,7 @@ import Image from "next/image";
 // import Hamburger from "./Hamburger";
 import logo from "@/public/logo/bino-logo.svg"
 import arrowDownPng from "@/public/icons/page1/arrowDownPngNormalWhite.png"
+import Link from "next/link";
 
 interface INavbarProps extends React.PropsWithChildren {
 }
@@ -12,7 +13,9 @@ const Navbar: React.FunctionComponent<INavbarProps> = (): JSX.Element => {
       <nav
          className="sticky top-0 z-50 flex h-[6rem] items-center justify-center bg-light-typeface_w shadow-[0_3px_15px_0_rgba(0,0,0,0.05)]">
          <div className="max-w-[66.5rem] flex justify-between items-center w-full">
-            <Image src={logo} alt={"Logo"} height={35} className="ml-[4.5rem]"/>
+            <Link href="/">
+               <Image src={logo} alt={"Logo"} height={35} className="ml-[4.5rem]"/>
+            </Link>
             <div className="flex w-full items-center justify-between">
                {/* <Hamburger /> */}
                <ul className="hidden items-center justify-evenly gap-4 md:flex md:gap-[2rem]">
