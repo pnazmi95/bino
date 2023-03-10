@@ -1,6 +1,8 @@
 import cartPngPrimary from "@/public/icons/page1/cartIconNormalPrimary.png"
 import leftArrowPrimary from "@/public/icons/page1/leftArrowPngIconPrimary.png"
 import Image from "next/image";
+// import testPhoto from "@/public/test/test-photo.jpg"
+import firstImageBg from "@/public/images/page1/first_image.png"
 interface IHeroProps extends React.PropsWithChildren{}
 
 const Hero: React.FunctionComponent<IHeroProps> = (props): JSX.Element => {
@@ -31,7 +33,11 @@ const Hero: React.FunctionComponent<IHeroProps> = (props): JSX.Element => {
                   </button>
                </div>
             </div>
-            <div className="w-[27.5rem] h-[20.625rem] rounded-[16px] bg-[#c95fbc] "></div>
+            <div className="w-[27.5rem] h-[20.625rem] rounded-[16px] bg-[#c95fbc] flex justify-center items-center">
+               <Image src={firstImageBg} alt={"img"} className="w-[10.375rem] h-[10.375rem]" />
+               {/*"overflow-hidden" be pedar*/}
+               {/*<Image src={testPhoto} alt={"test"} className="w-full h-full object-cover object-center" />*/}
+            </div>
          </div>
       </section>
    );

@@ -2,6 +2,7 @@ import oneIcon from "@/public/icons/page1/oneIconPngPrimary.png"
 import twoIcon from "@/public/icons/page1/twoIconPngPrimary.png"
 import threeIcon from "@/public/icons/page1/threeIconPngPrimary.png"
 import Image from "next/image";
+import thirdImgBg from "@/public/images/page1/third_image.png"
 
 interface IHowPartProps extends React.PropsWithChildren{}
 
@@ -25,7 +26,9 @@ const HowPart: React.FunctionComponent<IHowPartProps> = (props): JSX.Element => 
 
             <div className="flex justify-center w-[58.5rem] gap-[4.75rem]">
                <div className="flex flex-col justify-center items-center">
-                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[1.5rem]"></div>
+                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[1.5rem] flex justify-center items-center">
+                     <Image src={thirdImgBg} alt={"img"} className="w-[6.5rem] h-[6.5rem]" />
+                  </div>
                   <div className="mb-[2rem]">
                      <Image src={oneIcon} alt={"One"} className="w-[2.5rem] h-[2.5rem]"/>
                   </div>
@@ -37,7 +40,9 @@ const HowPart: React.FunctionComponent<IHowPartProps> = (props): JSX.Element => 
                   </div>
                </div>
                <div className="flex flex-col justify-center items-center">
-                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[1.5rem]"></div>
+                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[1.5rem] flex justify-center items-center">
+                     <Image src={thirdImgBg} alt={"img"} className="w-[6.5rem] h-[6.5rem]" />
+                  </div>
                   <div className="mb-[2rem]">
                      <Image src={twoIcon} alt={"Two"} className="w-[2.5rem] h-[2.5rem]"/>
                   </div>
@@ -49,7 +54,9 @@ const HowPart: React.FunctionComponent<IHowPartProps> = (props): JSX.Element => 
                   </div>
                </div>
                <div className="flex flex-col justify-center items-center">
-                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[1.5rem]"></div>
+                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[1.5rem] flex justify-center items-center">
+                     <Image src={thirdImgBg} alt={"img"} className="w-[6.5rem] h-[6.5rem]" />
+                  </div>
                   <div className="mb-[2rem]">
                      <Image src={threeIcon} alt={"Three"} className="w-[2.5rem] h-[2.5rem]"/>
                   </div>

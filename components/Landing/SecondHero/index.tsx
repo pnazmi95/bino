@@ -1,13 +1,16 @@
 import cartPngPrimary from "@/public/icons/page1/cartIconNormalPrimary.png"
 import leftArrowPrimary from "@/public/icons/page1/leftArrowPngIconPrimary.png"
 import Image from "next/image";
+import secondImageBg from "@/public/images/page1/second_image.png"
 interface ISecondHeroProps extends React.PropsWithChildren{}
 
 const SecondHero: React.FunctionComponent<ISecondHeroProps> = (props): JSX.Element => {
    return (
       <section className="bg-light-typeface_w h-[calc(100vh)] flex justify-center items-center">
          <div className="flex max-w-[66.5rem] h-[19.031rem] justify-between items-center gap-[3.5rem]">
-            <div className="w-[27.5rem] h-[19.031rem] rounded-[16px] bg-[#f4dff1] p-[4.328rem_8.563rem]"></div>
+            <div className="w-[27.5rem] h-[19.031rem] rounded-[16px] bg-[#f4dff1] p-[4.328rem_8.563rem] flex justify-center items-center">
+               <Image src={secondImageBg} alt={"img"} className="w-[10.375rem] h-[10.375rem]" />
+            </div>
             <div className="flex flex-col w-[35.5rem] h-[19.031rem] justify-between">
                <div>
                   <div className="font-display font-semibold text-[1.75rem]

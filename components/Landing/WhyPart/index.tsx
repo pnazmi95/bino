@@ -1,3 +1,5 @@
+import thirdImgBg from "@/public/images/page1/third_image.png";
+import Image from "next/image";
 
 interface IWhyPartProps extends React.PropsWithChildren{}
 
@@ -11,7 +13,9 @@ const WhyPart: React.FunctionComponent<IWhyPartProps> = (props): JSX.Element => 
 
             <div className="flex justify-center w-[58.5rem] gap-[4.75rem]">
                <div className="flex flex-col justify-center items-center">
-                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[2rem]"></div>
+                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[2rem] flex justify-center items-center">
+                     <Image src={thirdImgBg} alt={"img"} className="w-[6.5rem] h-[6.5rem]" />
+                  </div>
                   <div className="font-display font-semibold w-[10.875rem] h-[2.063rem] text-[1.188rem] text-light-typeface_b text-center mb-[1rem]">
                      سریع
                   </div>
@@ -20,7 +24,9 @@ const WhyPart: React.FunctionComponent<IWhyPartProps> = (props): JSX.Element => 
                   </div>
                </div>
                <div className="flex flex-col justify-center items-center">
-                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[2rem]"></div>
+                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[2rem] flex justify-center items-center">
+                     <Image src={thirdImgBg} alt={"img"} className="w-[6.5rem] h-[6.5rem]" />
+                  </div>
                   <div className="font-display font-semibold w-[10.875rem] h-[2.063rem] text-[1.188rem] text-light-typeface_b text-center mb-[1rem]">
                      آسان
                   </div>
@@ -29,7 +35,9 @@ const WhyPart: React.FunctionComponent<IWhyPartProps> = (props): JSX.Element => 
                   </div>
                </div>
                <div className="flex flex-col justify-center items-center">
-                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[2rem]"></div>
+                  <div className="w-[13rem] h-[13rem] p-[3.25rem] rounded-[16px] bg-[#f4dff1] mb-[2rem] flex justify-center items-center">
+                     <Image src={thirdImgBg} alt={"img"} className="w-[6.5rem] h-[6.5rem]" />
+                  </div>
                   <div className="font-display font-semibold w-[10.875rem] h-[2.063rem] text-[1.188rem] text-light-typeface_b text-center mb-[1rem]">
                      ضمانت کیفیت
                   </div>
