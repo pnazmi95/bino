@@ -1,68 +1,70 @@
 import AccordionItem from "@/components/Landing/FrequentQuestions/AccordionItem";
 import {useState} from "react";
+import {flag} from "arg";
 
 interface IFrequentQuestionsProps extends React.PropsWithChildren {
 }
 
+const accordionData = [
+   {
+      id: 1,
+      question: "بینو چیست و چطور کار می‌کند؟",
+      answer: "بینو یک پلتفرم آنلاین است که سفارش تولید محتوای بصری را برای کسب‌وکارها ساده می‌کند. با استفاده فرم سفارش محتوای بصری می‌توانید در زمانی کوتاه، محتوای بصری مد نظر خود را سفارش دهید و مطمئن باشید که توسط متخصص کارآزموده و مجرب، تولید خواهد شد. برای آشنایی بیشتر با روند کار بینو، صفحه نحوه کار بینو را مطالعه کنید."
+   },
+   {
+      id: 2,
+      question: "بینو چه نوع محتوایی تولید می‌کند؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 3,
+      question: "متخصصان تواید محتوای بصری بینو چه کسانی هستند؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 4,
+      question: "تولید محتوای بصری چه کاربردی دارد؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 5,
+      question: "کیفیت تولید محتوای بصری در بینو چطور است؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 6,
+      question: "چگونه از کپی نبودن محتوای بصری و کیفیت آن اطمینان حاصل کنیم؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 7,
+      question: "اگر از محتوای بصری تولیدی رضایت نداشتم چه اتفاقی می‌افتد؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 8,
+      question: "هزینه تولید محتوای بصری در بینو چگونه محاسبه می‌شود؟",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+   {
+      id: 9,
+      question: "برای سفارش محتوای بصری به راهنمایی بیشتری نیاز دارم",
+      answer: "این قسمت به زودی تکمیل خواهد شد."
+   },
+]
+
 const FrequentQuestions: React.FunctionComponent<IFrequentQuestionsProps> = (props): JSX.Element => {
 
-   const [isOpen, setIsOpen] = useState(false);
-   const [currentIndex, setCurrentIndex] = useState(0)
+   const [currentIndex, setCurrentIndex] = useState(accordionData.length + 1)
 
-   const toggle = (index: number): void => {
-      setCurrentIndex(index)
-      if (currentIndex === index) {
-         setIsOpen(!isOpen)
-      }
+   const handleOpen = (index: number): void => {
+      setCurrentIndex(prevState => prevState = index)
    }
 
-   const accordionData = [
-      {
-         id: 1,
-         question: "بینو چیست و چطور کار می‌کند؟",
-         answer: "بینو یک پلتفرم آنلاین است که سفارش تولید محتوای بصری را برای کسب‌وکارها ساده می‌کند. با استفاده فرم سفارش محتوای بصری می‌توانید در زمانی کوتاه، محتوای بصری مد نظر خود را سفارش دهید و مطمئن باشید که توسط متخصص کارآزموده و مجرب، تولید خواهد شد. برای آشنایی بیشتر با روند کار بینو، صفحه نحوه کار بینو را مطالعه کنید."
-      },
-      {
-         id: 2,
-         question: "بینو چه نوع محتوایی تولید می‌کند؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 3,
-         question: "متخصصان تواید محتوای بصری بینو چه کسانی هستند؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 4,
-         question: "تولید محتوای بصری چه کاربردی دارد؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 5,
-         question: "کیفیت تولید محتوای بصری در بینو چطور است؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 6,
-         question: "چگونه از کپی نبودن محتوای بصری و کیفیت آن اطمینان حاصل کنیم؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 7,
-         question: "اگر از محتوای بصری تولیدی رضایت نداشتم چه اتفاقی می‌افتد؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 8,
-         question: "هزینه تولید محتوای بصری در بینو چگونه محاسبه می‌شود؟",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-      {
-         id: 9,
-         question: "برای سفارش محتوای بصری به راهنمایی بیشتری نیاز دارم",
-         answer: "این قسمت به زودی تکمیل خواهد شد."
-      },
-   ]
+   const handleClose = (): void => {
+      setCurrentIndex(accordionData.length + 1)
+   }
+
 
    return (
       <section className="bg-light-typeface_w h-[calc(150vh)] flex justify-center items-center">
@@ -77,8 +79,9 @@ const FrequentQuestions: React.FunctionComponent<IFrequentQuestionsProps> = (pro
                      return (
                         <AccordionItem
                            key={index}
-                           isOpen={currentIndex === index && !isOpen}
-                           toggle={() => toggle(index)}
+                           isOpen={currentIndex === index ? true: false}
+                           handleClose = {handleClose}
+                           handleOpen={() => handleOpen(index)}
                            id={item.id}
                            question={item.question}
                            answer={item.answer}/>

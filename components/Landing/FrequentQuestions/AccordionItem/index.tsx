@@ -6,8 +6,9 @@ import {Collapse} from 'react-collapse';
 
 interface IAccordionItemProps extends React.PropsWithChildren {
    isOpen: boolean,
-   toggle: any,
-   id:number,
+   handleClose: any,
+   handleOpen: any,
+   id: number,
    question: string,
    answer: string
 }
@@ -15,7 +16,8 @@ interface IAccordionItemProps extends React.PropsWithChildren {
 const AccordionItem: React.FunctionComponent<IAccordionItemProps> = (
    {
       isOpen,
-      toggle,
+      handleOpen,
+      handleClose,
       id,
       question,
       answer
@@ -31,8 +33,12 @@ const AccordionItem: React.FunctionComponent<IAccordionItemProps> = (
                className="h-[1.5rem] font-display font-medium text-[0.875rem] text-right text-light-typeface_b leading-normal pt-[0.05rem]">
                {question}
             </span>
-            <Image src={isOpen ? arrowUpIcon : arrowDownIcon} alt="arrowIcon" className="w-[1.5rem] h-[1.5rem] cursor-pointer"
-                   onClick={toggle}/>
+
+            {!isOpen ? <Image src={arrowDownIcon} alt="arrowIcon" className="w-[1.5rem] h-[1.5rem] cursor-pointer"
+                              onClick={handleOpen}/> :
+               <Image src={arrowUpIcon} alt="arrowIcon" className="w-[1.5rem] h-[1.5rem] cursor-pointer"
+                      onClick={handleClose}/>}
+
          </div>
          <Collapse isOpened={isOpen}>
             <div
