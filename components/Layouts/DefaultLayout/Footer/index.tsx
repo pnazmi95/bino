@@ -83,7 +83,7 @@ const Footer: React.FunctionComponent<FooterProps> = (): JSX.Element => {
                      </div>
                      <div className="flex">
                         <input type="text" placeholder="ایمیل"
-                               className="w-[16.25rem] h-[3.5rem] p-[1rem_1rem_1rem_1rem] rounded-r-[4px] rounded-[#7b7b7b] bg-none font-display text-right text-[0.875rem] font-medium"/>
+                               className="w-[16.25rem] h-[3.5rem] p-[1rem_1rem_1rem_1rem] rounded-r-[4px] border-[1px] border-[#7b7b7b] bg-[#eeeeee] font-display text-right text-[0.875rem] font-medium"/>
                         <button className="w-[5.75rem] h-[3.5rem] p-[1rem_1.5rem] rounded-l-[4px] bg-light-primary
                      shadow-[0_4px_16px_0_rgba(191, 63, 175, 0.3)]
                   ">
